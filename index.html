@@ -83,9 +83,36 @@
 
   <footer class="site-footer">
     <img src="img/poder-verdad.png" alt="El Poder de la Verdad" class="footer-slogan" />
+    <button class="btn-donar" id="btn-donar">☕ Donar</button>
     <p class="footer-legal">Ningún dato personal es almacenado</p>
   </footer>
 
+  <!-- Modal donación -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      <p class="modal-emoji">💜</p>
+      <h2 class="modal-titulo" id="modal-titulo">¡Gracias por estar aquí!</h2>
+      <p class="modal-texto">
+        Esta página es <strong>completamente gratis</strong> y siempre lo será.<br/>
+        Si quieres colaborar con el mantenimiento, cualquier aporte —
+        por pequeño que sea — es recibido con mucho cariño.
+      </p>
+      <img src="img/qr-donacion.png" alt="QR para donar vía Bre-B" class="modal-qr" />
+      <p class="modal-llave">Bre-B · <strong>@JAE524</strong></p>
+      <p class="modal-gracias">¡Que viva Colombia! 🇨🇴</p>
+    </div>
+  </div>
+
   <script src="js/app.js"></script>
+  <script>
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalClose   = document.getElementById('modal-close');
+    document.getElementById('btn-donar').addEventListener('click', () => modalOverlay.classList.add('visible'));
+    modalClose.addEventListener('click', () => modalOverlay.classList.remove('visible'));
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) modalOverlay.classList.remove('visible');
+    });
+  </script>
 </body>
 </html>
