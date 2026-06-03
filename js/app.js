@@ -7,7 +7,7 @@
 
   /* ── Config ── */
   const CANVAS_SIZE   = 1080;          // output image size in px (square, 1:1 for social media)
-  const TEMPLATE_SRC  = 'img/plantilla.png'; // place your template here
+  const TEMPLATE_SRC  = 'img/plantilla.webp';
 
   /* Name zone: where the name is rendered (fraction of canvas size, 0–1) */
   const NAME_ZONE = {
