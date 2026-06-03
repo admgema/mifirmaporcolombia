@@ -397,28 +397,12 @@ body {
   box-shadow: 0 4px 20px rgba(0,48,135,0.18);
 }
 
-/* Botón fijo desktop */
-.btn-donar--fixed {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  z-index: 200;
-}
-
-/* Botón en footer (móvil) */
+/* Botón en footer */
 .btn-donar--footer {
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.3);
   color: #fff;
   box-shadow: none;
-}
-
-@media (max-width: 820px) {
-  .btn-donar--fixed { display: none !important; }
-}
-
-@media (min-width: 821px) {
-  .btn-donar--footer { display: none !important; }
 }
 
 /* ── Modal donación ── */
