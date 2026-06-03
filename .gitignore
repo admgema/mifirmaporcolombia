@@ -1,0 +1,8 @@
+# Excluir carpeta de línea gráfica (archivos pesados, no necesarios para el sitio)
+Línea gráfica/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+.claude/

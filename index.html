@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Firma por Colombia</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="img/logo-ivan.png" alt="Iván Cepeda Presidente" class="header-logo" />
+    </div>
+  </header>
+
+  <div class="ivan-figure">
+    <img src="img/ivan-alpha.png" alt="" aria-hidden="true" />
+  </div>
+
+  <main class="main">
+
+    <div class="steps-bar">
+      <div class="step active" id="step1-indicator">
+        <span class="step-num">1</span>
+        <span class="step-label">Escribe tu nombre</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step" id="step2-indicator">
+        <span class="step-num">2</span>
+        <span class="step-label">Previsualiza</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step" id="step3-indicator">
+        <span class="step-num">3</span>
+        <span class="step-label">Descarga y comparte</span>
+      </div>
+    </div>
+
+    <div class="workspace">
+
+      <div class="canvas-wrapper" id="canvas-wrapper">
+        <canvas id="preview-canvas"></canvas>
+        <div class="canvas-placeholder" id="canvas-placeholder">
+          <span>Tu nombre aparecerá aquí</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="input-group">
+          <label class="input-label" for="nombre-input">Tu nombre o firma</label>
+          <input
+            id="nombre-input"
+            class="nombre-input"
+            type="text"
+            placeholder="Ej: María González"
+            maxlength="60"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="char-counter"><span id="char-count">0</span>/60</span>
+        </div>
+
+        <button class="btn-download" id="btn-download" disabled>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Descargar imagen
+        </button>
+
+        <p class="share-hint" id="share-hint" style="display:none;">
+          ¡Listo! Compártela en <strong>Instagram, Facebook, WhatsApp</strong> y muestra tu apoyo 🇨🇴
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <img src="img/poder-verdad.png" alt="El Poder de la Verdad" class="footer-slogan" />
+    <p class="footer-legal">Ningún dato personal es almacenado</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
