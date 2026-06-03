@@ -40,7 +40,7 @@
   --bg-input:    #FFFFFF;
   --border:      #D0D8E8;
   --text:        #003087;
-  --text-muted:  #6B7A9A;
+  --text-muted:  #4A5568;
 
   --radius-sm:   8px;
   --radius-md:   14px;
@@ -171,7 +171,7 @@ body {
 }
 
 .step-label {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
   white-space: nowrap;
   font-family: 'Racing Sans One', sans-serif;
@@ -260,7 +260,7 @@ body {
 
 .input-label {
   font-family: 'Racing Sans One', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 400;
   color: var(--col-blue);
   text-transform: uppercase;
@@ -470,7 +470,7 @@ body {
 
 .modal-texto {
   font-family: 'Racing Sans One', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 20px;
